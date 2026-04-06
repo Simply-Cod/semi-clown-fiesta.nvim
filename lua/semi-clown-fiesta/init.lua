@@ -1,7 +1,7 @@
 local M = {}
 
 function M.setup(opts)
-  local settings = require "no-clown-fiesta.settings"
+  local settings = require "semi-clown-fiesta.settings"
   if opts then
     settings.set(opts)
   end
@@ -9,7 +9,7 @@ end
 
 function M.load(opts)
   M.setup(opts)
-  local settings = require "no-clown-fiesta.settings"
+  local settings = require "semi-clown-fiesta.settings"
   local opts = settings.opts
 
   vim.api.nvim_command "hi clear"
@@ -21,11 +21,11 @@ function M.load(opts)
     vim.o.background = "dark"
   end
   vim.o.termguicolors = true
-  vim.g.colors_name = "no-clown-fiesta"
+  vim.g.colors_name = "semi-clown-fiesta"
 
-  local util = require "no-clown-fiesta.util"
-  local palette = require("no-clown-fiesta.palettes").get(opts.theme)
-  local groups = require "no-clown-fiesta.groups"
+  local util = require "semi-clown-fiesta.util"
+  local palette = require("semi-clown-fiesta.palettes").get(opts.theme)
+  local groups = require "semi-clown-fiesta.groups"
 
   for _, group in ipairs(groups) do
     group = group.highlight(palette, opts)

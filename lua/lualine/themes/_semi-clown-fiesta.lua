@@ -3,7 +3,7 @@
 local M = {}
 
 function M.get(theme)
-  local palette = require("no-clown-fiesta.palettes").get(theme)
+  local palette = require("semi-clown-fiesta.palettes").get(theme)
   return {
     normal = {
       a = { fg = palette.cursor_bg, bg = palette.accent, gui = "bold" },
