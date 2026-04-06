@@ -1,35 +1,35 @@
-no-clown-fiesta.txt
+semi-clown-fiesta.txt
 
 ================================================================================
-CONTENTS                                                *no-clown-fiesta-contents*
+CONTENTS                                                *semi-clown-fiesta-contents*
 
-1. No Clown Fiesta...............................|no-clown-fiesta-no_clown_fiesta|
-    1.1. Usage.............................................|no-clown-fiesta-usage|
-    1.2. Supported Plugins.....................|no-clown-fiesta-supported_plugins|
+1. Semi Clown Fiesta...............................|semi-clown-fiesta-semi_clown_fiesta|
+    1.1. Usage.............................................|semi-clown-fiesta-usage|
+    1.2. Supported Plugins.....................|semi-clown-fiesta-supported_plugins|
 
 ================================================================================
-NO CLOWN FIESTA                                  *no-clown-fiesta-no_clown_fiesta*
+SEMI CLOWN FIESTA                                  *semi-clown-fiesta-semi_clown_fiesta*
 
-An attempt at a color scheme that does not look like a clown puked up the source code.
+A fork of the theme no-clown-fiesta with some tweaks.
 
 
 
 --------------------------------------------------------------------------------
-USAGE                                                      *no-clown-fiesta-usage*
+USAGE                                                      *semi-clown-fiesta-usage*
 
 To enable this colorscheme:
 >
-    colorscheme no-clown-fiesta
+    colorscheme semi-clown-fiesta
 <
 >
-    vim.cmd[[colorscheme no-clown-fiesta]]
+    vim.cmd[[colorscheme semi-clown-fiesta]]
 <
 
 To override the default settings you need to call setup before enabling the
-colorscheme. No-clown-fiesta will use these settings, unless you call setup
+colorscheme. Semi-clown-fiesta will use these settings, unless you call setup
 and override these.
 >
-    require("no-clown-fiesta").setup({
+    require("semi-clown-fiesta").setup({
       theme = "dark", -- supported themes are: dark, dim, light
       transparent = false, -- Enable this to disable the bg color
       styles = { 
@@ -44,7 +44,7 @@ and override these.
 <
 
 --------------------------------------------------------------------------------
-SUPPORTED PLUGINS                              *no-clown-fiesta-supported_plugins*
+SUPPORTED PLUGINS                              *semi-clown-fiesta-supported_plugins*
 
 *   Alpha
 *   Git
@@ -61,5 +61,7 @@ SUPPORTED PLUGINS                              *no-clown-fiesta-supported_plugin
 *   Treesitter
 *   StatusLine (the default non custom one)
 *   WhichKey
-*   Mini.statusline
+*   Mini
+        - statusline
+        - files
 *   DiffView

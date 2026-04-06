@@ -2,7 +2,6 @@
 
 Semi Clown Fiesta is a fork of [No-Clown-Fiesta](https://github.com/aktersnurra/no-clown-fiesta.nvim) which is a minimal theme
 
-![image](https://gustafrydholm.xyz/images/no-clown-fiesta.png)
 
 ## Usage
 
