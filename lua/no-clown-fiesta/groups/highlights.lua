@@ -105,7 +105,7 @@ function M.highlight(palette, opts)
     Identifier = { fg = palette.fg },
     Function = vim.tbl_extend("force", { fg = palette.cyan }, opts.styles.functions),
     Operator = { fg = palette.fg },
-    Type = vim.tbl_extend("force", { fg = palette.fg }, opts.styles.type),
+    Type = vim.tbl_extend("force", { fg = palette.light_gray }, opts.styles.type),
     StorageClass = { fg = palette.gray_blue },
     Structure = { fg = palette.gray_blue },
     Typedef = { fg = palette.fg },
