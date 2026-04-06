@@ -1,6 +1,6 @@
-# No Clown Fiesta
+# Semi Clown Fiesta
 
-An attempt at a color scheme that does not look like a clown puked up the source code.
+Semi Clown Fiesta is a fork of [No-Clown-Fiesta](https://github.com/aktersnurra/no-clown-fiesta.nvim) which is a minimal theme
 
 ![image](https://gustafrydholm.xyz/images/no-clown-fiesta.png)
 
@@ -9,19 +9,19 @@ An attempt at a color scheme that does not look like a clown puked up the source
 To enable this colorscheme:
 
 ```vim
-colorscheme no-clown-fiesta
+colorscheme semi-clown-fiesta
 ```
 
 ```lua
-vim.cmd[[colorscheme no-clown-fiesta]]
+vim.cmd[[colorscheme semi-clown-fiesta]]
 ```
 
 To override the default settings you need to call setup before enabling the
-colorscheme. No-clown-fiesta will use these settings, unless you call setup
+colorscheme. semi-clown-fiesta will use these settings, unless you call setup
 and override these.
 
 ```lua
-require("no-clown-fiesta").setup({
+require("semi-clown-fiesta").setup({
   theme = "dark", -- supported themes are: dark, dim, light
   transparent = false, -- Enable this to disable the bg color
   styles = {
@@ -39,22 +39,6 @@ require("no-clown-fiesta").setup({
 
 ### Installation
 
-If you are using the lazy, then you can install and configure the plugin like this:
-
-```fnl
-(local opts {:theme :dark
-             :styles {:type {:bold true}
-                      :lsp {:underline true}
-                      :match_paren {:underline true}}})
-
-(λ config []
-  (let [plugin (require :no-clown-fiesta)]
-    (plugin.load opts)))
-
-{1 :aktersnurra/no-clown-fiesta.nvim :lazy false :priority 1000 : config}
-```
-
-or if you prefer lua:
 
 ```lua
 local opts = {
@@ -67,19 +51,18 @@ local opts = {
 }
 
 local function config()
-  local plugin = require "no-clown-fiesta"
+  local plugin = require "semi-clown-fiesta"
   return plugin.load(opts)
 end
 
 return {
-  "aktersnurra/no-clown-fiesta.nvim",
+  "Simply-Cod/semi-clown-fiesta.nvim",
   priority = 1000,
   config = config,
   lazy = false,
 }
 ```
 
-Other plugin managers are left as an exercise to the reader.
 
 ## Themes
 
@@ -112,7 +95,9 @@ This plugin supports three different themes:
 - Telescope
 - Treesitter
 - WhichKey
-- mini.statusline
+- mini
+    - statusline
+    - files
 - DiffView
 
 ### Lualine
@@ -120,5 +105,5 @@ This plugin supports three different themes:
 Enable theme by setting the `theme` options in the lualine options, e.g.:
 
 ```fnl
-(local opts {:options {:theme :no-clown-fiesta}})
+(local opts {:options {:theme :semi-clown-fiesta}})
 ```
