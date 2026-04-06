@@ -110,7 +110,7 @@ function M.highlight(palette, opts)
     Structure = { fg = palette.gray_blue },
     Typedef = { fg = palette.fg },
     Keyword = vim.tbl_extend("force", { fg = palette.gray_blue }, opts.styles.keywords),
-    Statement = { fg = palette.gray_blue },
+    Statement = { fg = palette.gray_blue, bold = true },
     Conditional = { fg = palette.gray_blue },
     Repeat = { fg = palette.gray_blue },
     Label = { fg = palette.fg },
