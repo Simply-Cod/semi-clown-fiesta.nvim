@@ -99,6 +99,7 @@ This plugin supports three different themes:
     - files
 - DiffView
 
+
 ### Lualine
 
 Enable theme by setting the `theme` options in the lualine options, e.g.:
