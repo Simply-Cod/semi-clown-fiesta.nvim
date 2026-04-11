@@ -104,7 +104,7 @@ function M.highlight(palette, opts)
     Float = { fg = palette.red },
     Identifier = { fg = palette.fg },
     Function = vim.tbl_extend("force", { fg = palette.cyan }, opts.styles.functions),
-    Operator = { fg = palette.cyan_comp },
+    Operator = { fg = palette.light_gray },
     Type = vim.tbl_extend("force", { fg = palette.light_gray }, opts.styles.type),
     cParen = { fg = palette.medium_gray_comp },
     StorageClass = { fg = palette.gray_blue },

@@ -61,7 +61,7 @@ function M.highlight(palette, opts)
     ["@module"] = { fg = palette.fg },
     ["@number"] = { fg = palette.red },
     ["@number.float"] = { fg = palette.red },
-    ["@operator"] = { fg = palette.cyan_comp },
+    ["@operator"] = { fg = palette.light_gray },
     ["@property"] = { fg = palette.fg },
     ["@punctuation.bracket"] = { fg = palette.fg },
     ["@punctuation.delimiter"] = { fg = palette.fg },
