@@ -15,6 +15,7 @@ local palettes = {
         gray_blue_comp = "#ab927e",
         medium_gray_blue = "#A2B5C1",
         cyan = "#88afa2",
+        cyan_comp = "#AF8895",
         red = "#b46958",
         green = "#90A959",
         yellow = "#F4BF75",

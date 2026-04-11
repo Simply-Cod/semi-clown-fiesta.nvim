@@ -61,7 +61,7 @@ function M.highlight(palette, opts)
     ["@module"] = { fg = palette.fg },
     ["@number"] = { fg = palette.red },
     ["@number.float"] = { fg = palette.red },
-    ["@operator"] = { fg = palette.operator },
+    ["@operator"] = { fg = palette.cyan_comp },
     ["@property"] = { fg = palette.fg },
     ["@punctuation.bracket"] = { fg = palette.fg },
     ["@punctuation.delimiter"] = { fg = palette.fg },
@@ -83,6 +83,8 @@ function M.highlight(palette, opts)
     ["@variable.parameter.reference"] = { fg = palette.fg },
 
     ["@lsp.type.class.cpp"] = { fg = palette.gray_blue_comp },
+    ["@lsp.typemod.type.struct.go"] = { fg = palette.gray_blue_comp},
+    ["@lsp.typemod.string.format.go"] = {fg = palette.cyan_comp},
   }
 end
 
