@@ -83,8 +83,11 @@ function M.highlight(palette, opts)
     ["@variable.parameter.reference"] = { fg = palette.fg },
 
     ["@lsp.type.class.cpp"] = { fg = palette.gray_blue_comp },
-    ["@lsp.typemod.type.struct.go"] = { fg = palette.gray_blue_comp},
-    ["@lsp.typemod.string.format.go"] = {fg = palette.cyan_comp},
+
+
+    ["@lsp.typemod.type.struct.go"] = { fg = palette.gray_blue_comp },
+    ["@lsp.typemod.string.format.go"] = {fg = palette.cyan_comp },
+    ["@lsp.typemod.variable.readonly.go"] = {fg = palette.red },
   }
 end
 

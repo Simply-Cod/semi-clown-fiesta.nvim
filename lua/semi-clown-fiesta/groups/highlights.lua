@@ -131,6 +131,9 @@ function M.highlight(palette, opts)
       { fg = palette.medium_gray },
       opts.styles.comments
     ),
+
+    cSpecial = { fg = palette.cyan_comp },
+
     Underlined = { underline = true },
     Bold = { bold = true },
     Italic = { italic = true },
