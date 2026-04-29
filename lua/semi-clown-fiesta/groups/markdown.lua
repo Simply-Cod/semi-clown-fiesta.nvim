@@ -7,7 +7,7 @@ function M.highlight(palette, opts)
     markdownCode = { fg = palette.green },
     markdownCodeBlock = { fg = palette.green },
     markdownCodeDelimiter = { fg = palette.green },
-    markdownH1 = { fg = palette.blue },
+    markdownH1 = { fg = palette.cyan },
     markdownH2 = { fg = palette.blue },
     markdownH3 = { fg = palette.blue },
     markdownH4 = { fg = palette.blue },
@@ -25,6 +25,14 @@ function M.highlight(palette, opts)
     markdownOrderedListMarker = { fg = palette.red },
     markdownRule = { fg = palette.accent },
     markdownUrl = { fg = palette.cyan, underline = true },
+
+    ["@markup.heading.1.markdown"] = { fg = palette.cyan, bold = true },
+    ["@markup.heading.2.markdown"] = { fg = palette.blue, bold = true },
+    ["@markup.heading.3.markdown"] = { fg = palette.gray_blue, bold = true },
+    ["@markup.heading.4.markdown"] = { fg = palette.gray_blue_comp, bold = true },
+    ["@markup.heading.5.markdown"] = { fg = palette.blue, bold = true },
+    ["@markup.heading.6.markdown"] = { fg = palette.blue, bold = true },
+    ["@markup.strong.markdown_inline"] = { fg = palette.yellow, bold = true },
   }
 end
 
