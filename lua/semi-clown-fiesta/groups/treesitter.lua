@@ -84,6 +84,7 @@ function M.highlight(palette, opts)
 
     ["@lsp.type.class.cpp"] = { fg = palette.gray_blue_comp },
 
+    ["@lsp.typemod.macro.globalScope.c"] = { fg = palette.cyan_comp },
 
     ["@lsp.typemod.type.struct.go"] = { fg = palette.gray_blue_comp },
     ["@lsp.typemod.string.format.go"] = {fg = palette.cyan_comp },

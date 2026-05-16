@@ -133,6 +133,7 @@ function M.highlight(palette, opts)
     ),
 
     cSpecial = { fg = palette.cyan_comp },
+    cConstant = { fg = palette.red},
 
     Underlined = { underline = true },
     Bold = { bold = true },
